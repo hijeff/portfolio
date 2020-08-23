@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #565759;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  @media only screen and (min-width: 420px) {
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  #content {
+    max-width: 600px;
+    padding: 1em 2em;
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    text-decoration-color: rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    transition: all 100ms;
+  }
+  a:hover {
+    border-color: rgba(255, 170, 170, 0.4);
+    text-shadow: -3px 0 1px rgb(30,242,241) , 3px 0 1px rgb(246,5,10) ;
+  }
+  h1 {
+    display:none;
+  }
+  h2 {
+    box-sizing: content-box;
+    border: none;
+    font: normal 50px/normal "Passion O", Helvetica, sans-serif;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    text-overflow: clip;
+    letter-spacing: 3px;
+    font-weight: bold;
+     --minFontSize: 32px;
+    --maxFontSize: 200px;
+    --scaler: 5.5vw;
+    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+    text-shadow: -3px 0 1px rgb(30,242,241) , 3px 0 1px rgb(246,5,10) ;
+  }
+  .link-container {
+    display: block;
+    padding-top: 50px;
+    white-space: nowrap;
+    }
+  .anaglyph {
+    display: block;
+    box-sizing: content-box;
+    border: none;
+    font: normal 50px/normal "Passion O", Helvetica, sans-serif;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    text-overflow: clip;
+    letter-spacing: 3px;
+    font-weight: bold;
+     --minFontSize: 32px;
+    --maxFontSize: 200px;
+    --scaler: 5.5vw;
+    font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+  

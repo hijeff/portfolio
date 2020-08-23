@@ -1,0 +1,152 @@
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+
+  display: inline;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color:none ;
+  font: normal .7em/normal "Passion O", Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-overflow: clip;
+  letter-spacing: 3px;
+}
+}
+}
+
+.main {
+  text-align: left;
+}
+
+.aside-1 {
+  background: none;
+}
+
+.aside-2 {
+  background: none;
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 auto; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .aside-1 { order: 1; } 
+  .main    { order: 2; }
+  .aside-2 { order: 3; }
+  .footer  { order: 4; }
+}
+
+body {
+  padding: 3em; 
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: normal;
+  background-color: rgb(71, 71, 71)
+}
+.anaglyph:hover {
+  text-shadow: -3px 0 1px rgb(30,242,241) , 3px 0 1px rgb(246,5,10) ;
+  
+}
+a {
+display:block;
+}
+a:link {
+text-decoration:none
+}
+.greeting{
+  font: normal 18px/normal "Passion O", Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-overflow: clip;
+  letter-spacing: 3px;
+}
+
+/*3d stuff*/
+nav a:hover {
+text-shadow: -3px 0 1px rgb(30,242,241) , 3px 0 1px rgb(246,5,10) ;
+
+}
+
+  
+
+.link-container {
+display: block;
+padding-top: 50px;
+white-space: nowrap;
+}
+
+.hello {
+  box-sizing: content-box;
+  border: none;
+  font: normal 50px/normal "Passion O", Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-overflow: clip;
+  letter-spacing: 3px;
+  font-weight: bold;
+   --minFontSize: 32px;
+  --maxFontSize: 200px;
+  --scaler: 5.5vw;
+  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+  text-shadow: -3px 0 1px rgb(30,242,241) , 3px 0 1px rgb(246,5,10) ;
+}
+
+
+.anaglyph {
+  box-sizing: content-box;
+  border: none;
+  font: normal 50px/normal "Passion O", Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-overflow: clip;
+  letter-spacing: 3px;
+  font-weight: bold;
+   --minFontSize: 32px;
+  --maxFontSize: 200px;
+  --scaler: 5.5vw;
+  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+
+}
+.hello-main {
+  box-sizing: content-box;
+  border: none;
+  font: normal 50px/normal "Passion O", Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-overflow: clip;
+  letter-spacing: 3px;
+  font-weight: bold;
+   --minFontSize: 32px;
+  --maxFontSize: 200px;
+  --scaler: 5.5vw;
+  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+
+}
+
+a:visited{
+  color:white;
+}
+
+
+
+
