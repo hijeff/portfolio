@@ -27,8 +27,7 @@
   text-overflow: clip;
   letter-spacing: 3px;
 }
-}
-}
+
 
 .main {
   text-align: left;
@@ -71,7 +70,8 @@ a {
 display:block;
 }
 a:link {
-text-decoration:none
+text-decoration:none;
+color:white;
 }
 .greeting{
   font: normal 18px/normal "Passion O", Helvetica, sans-serif;
