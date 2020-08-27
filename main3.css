@@ -1,5 +1,8 @@
 /* MAIN */
 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
 .wrapper {
     display: flex;  
     flex-flow: row wrap;
@@ -63,7 +66,6 @@
     font-family: 'helvetica neue', helvetica, arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     line-height: 1.5;
-    font-size: 18px;
     font-weight: normal;
     background-image: url("img/2.jpg");
     background-repeat: no-repeat;
@@ -136,12 +138,14 @@
     text-transform: uppercase;
     position: relative;
     mix-blend-mode: screen;
+    font-size: 2em;
+    letter-spacing: 9px;
+    font-family: 'Oswald', sans-serif;
     color: transparent;
     text-shadow: 0 0 0.125rem #0f0;
     animation: jitter 5s infinite;
-    -webkit-animation: jitter 5s infinite;
     text-decoration: none;
-    
+
   }
 
   .vhs-small {
@@ -151,7 +155,6 @@
     color: transparent;
     text-shadow: 0 0 0.125rem #0f0;
     animation: jitter 5s infinite;
-    -webkit-animation: jitter 5s infinite;
     text-decoration: none;
     
   }
@@ -168,7 +171,6 @@
     left: 0;
     mix-blend-mode: screen;
     animation: glitch 5s infinite alternate;
-    -webkit-animation: glitch 5s infinite alternate;
   }
   .vhs::before {
     text-shadow: 0 0 0.125rem #f00;
@@ -176,10 +178,7 @@
   .vhs::after {
     text-shadow: 0 0 0.125rem #00f;
     animation-delay: 5s;
-    -webkit-animation-delay: 5s;
   }
-
-
   @-moz-keyframes glitch {
     0% {
       transform: rotate(0deg) translate(0.11rem) rotate(0deg);
@@ -292,4 +291,261 @@
       transform: translateX(0);
     }
   }
+  
+
+  /*new text */
+
+
+  
+  .vhs:after,
+  .vhs:before {
+    color: white;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 2px;
+    animation: glitch-anim2 1s infinite alternate-reverse;
+    text-shadow: -2px 0 0 cyan, 2px 0 0 red;
+  }
+  
+  .vhs:before {
+    left: -2px;
+    text-shadow: -2px 0 0 cyan, 2px 0 0 red;
+    animation: glitch-anim 1s infinite alternate-reverse;
+  }
+  
+  @-webkit-keyframes glitch-anim {
+    0% {
+      clip: rect(592px, 9999px, 480px, 0);
+    }
+    10% {
+      clip: rect(161px, 9999px, 251px, 0);
+    }
+    20% {
+      clip: rect(47px, 9999px, 439px, 0);
+    }
+    30% {
+      clip: rect(506px, 9999px, 371px, 0);
+    }
+    40% {
+      clip: rect(379px, 9999px, 490px, 0);
+    }
+    50% {
+      clip: rect(283px, 9999px, 268px, 0);
+    }
+    60% {
+      clip: rect(352px, 9999px, 210px, 0);
+    }
+    70% {
+      clip: rect(239px, 9999px, 395px, 0);
+    }
+    80% {
+      clip: rect(493px, 9999px, 254px, 0);
+    }
+    90% {
+      clip: rect(111px, 9999px, 185px, 0);
+    }
+    100% {
+      clip: rect(524px, 9999px, 92px, 0);
+    }
+  }
+  
+  @keyframes glitch-anim {
+    0% {
+      clip: rect(592px, 9999px, 480px, 0);
+    }
+    10% {
+      clip: rect(161px, 9999px, 251px, 0);
+    }
+    20% {
+      clip: rect(47px, 9999px, 439px, 0);
+    }
+    30% {
+      clip: rect(506px, 9999px, 371px, 0);
+    }
+    40% {
+      clip: rect(379px, 9999px, 490px, 0);
+    }
+    50% {
+      clip: rect(283px, 9999px, 268px, 0);
+    }
+    60% {
+      clip: rect(352px, 9999px, 210px, 0);
+    }
+    70% {
+      clip: rect(239px, 9999px, 395px, 0);
+    }
+    80% {
+      clip: rect(493px, 9999px, 254px, 0);
+    }
+    90% {
+      clip: rect(111px, 9999px, 185px, 0);
+    }
+    100% {
+      clip: rect(524px, 9999px, 92px, 0);
+    }
+  }
+  @-webkit-keyframes glitch-anim2 {
+    0% {
+      clip: rect(441px, 9999px, 177px, 0);
+    }
+    10% {
+      clip: rect(446px, 9999px, 171px, 0);
+    }
+    20% {
+      clip: rect(39px, 9999px, 437px, 0);
+    }
+    30% {
+      clip: rect(423px, 9999px, 329px, 0);
+    }
+    40% {
+      clip: rect(443px, 9999px, 587px, 0);
+    }
+    50% {
+      clip: rect(538px, 9999px, 167px, 0);
+    }
+    60% {
+      clip: rect(101px, 9999px, 574px, 0);
+    }
+    70% {
+      clip: rect(359px, 9999px, 559px, 0);
+    }
+    80% {
+      clip: rect(39px, 9999px, 157px, 0);
+    }
+    90% {
+      clip: rect(504px, 9999px, 472px, 0);
+    }
+    100% {
+      clip: rect(351px, 9999px, 243px, 0);
+    }
+  }
+  @keyframes glitch-anim2 {
+    0% {
+      clip: rect(441px, 9999px, 177px, 0);
+    }
+    10% {
+      clip: rect(446px, 9999px, 171px, 0);
+    }
+    20% {
+      clip: rect(39px, 9999px, 437px, 0);
+    }
+    30% {
+      clip: rect(423px, 9999px, 329px, 0);
+    }
+    40% {
+      clip: rect(443px, 9999px, 587px, 0);
+    }
+    50% {
+      clip: rect(538px, 9999px, 167px, 0);
+    }
+    60% {
+      clip: rect(101px, 9999px, 574px, 0);
+    }
+    70% {
+      clip: rect(359px, 9999px, 559px, 0);
+    }
+    80% {
+      clip: rect(39px, 9999px, 157px, 0);
+    }
+    90% {
+      clip: rect(504px, 9999px, 472px, 0);
+    }
+    100% {
+      clip: rect(351px, 9999px, 243px, 0);
+    }
+  }
+  @-webkit-keyframes blur {
+    0% {
+      -webkit-filter: blur(2px);
+              filter: blur(2px);
+    }
+    10% {
+      -webkit-filter: blur(2px);
+              filter: blur(2px);
+    }
+    20% {
+      -webkit-filter: blur(2px);
+              filter: blur(2px);
+    }
+    30% {
+      -webkit-filter: blur(2px);
+              filter: blur(2px);
+    }
+    40% {
+      -webkit-filter: blur(2px);
+              filter: blur(2px);
+    }
+    50% {
+      -webkit-filter: blur(1px);
+              filter: blur(1px);
+    }
+    60% {
+      -webkit-filter: blur(1px);
+              filter: blur(1px);
+    }
+    70% {
+      -webkit-filter: blur(2px);
+              filter: blur(2px);
+    }
+    80% {
+      -webkit-filter: blur(1px);
+              filter: blur(1px);
+    }
+    90% {
+      -webkit-filter: blur(1px);
+              filter: blur(1px);
+    }
+    100% {
+      -webkit-filter: blur(2px);
+              filter: blur(2px);
+    }
+  }
+  @keyframes blur {
+    0% {
+      -webkit-filter: blur(2px);
+              filter: blur(2px);
+    }
+    10% {
+      -webkit-filter: blur(2px);
+              filter: blur(2px);
+    }
+    20% {
+      -webkit-filter: blur(2px);
+              filter: blur(2px);
+    }
+    30% {
+      -webkit-filter: blur(2px);
+              filter: blur(2px);
+    }
+    40% {
+      -webkit-filter: blur(2px);
+              filter: blur(2px);
+    }
+    50% {
+      -webkit-filter: blur(1px);
+              filter: blur(1px);
+    }
+    60% {
+      -webkit-filter: blur(1px);
+              filter: blur(1px);
+    }
+    70% {
+      -webkit-filter: blur(2px);
+              filter: blur(2px);
+    }
+    80% {
+      -webkit-filter: blur(1px);
+              filter: blur(1px);
+    }
+    90% {
+      -webkit-filter: blur(1px);
+              filter: blur(1px);
+    }
+    100% {
+      -webkit-filter: blur(2px);
+              filter: blur(2px);
+    }
+  }
+  
   
