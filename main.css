@@ -26,7 +26,6 @@
     bottom: 0;
     left: 2rem;
     padding: 30px;
-    background-color:none ;
     font: normal .7em/normal "Passion O", Helvetica, sans-serif;
     text-align: center;
     text-overflow: clip;
@@ -66,7 +65,13 @@
     line-height: 1.5;
     font-size: 18px;
     font-weight: normal;
-    background-image: url(img/2.jpg);
+    background-image: url("img/2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+
   
   }
  
