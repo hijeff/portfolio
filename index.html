@@ -163,7 +163,7 @@
   @media (min-width: 600px) { .stat:nth-child(odd) { border-right: 2px solid var(--ink); } .stat:nth-last-child(-n+2) { border-bottom: 0; } }
   @media (min-width: 1000px) { .stat { border-bottom: 0; border-right: 2px solid var(--ink); } .stat:last-child { border-right: 0; } }
   @media (max-width: 599px) { .stat:last-child { border-bottom: 0; } }
-  .stat .n { font-family: var(--heavy); font-size: clamp(38px, 4.6vw, 52px); line-height: 1; letter-spacing: -.01em; }
+  .stat .n { font-family: var(--heavy); font-size: clamp(32px, 3.2vw, 46px); line-height: 1; letter-spacing: -.01em; white-space: nowrap; overflow-wrap: normal; }
   .stat .n small { font-size: .5em; }
   .stat:nth-child(1) .n { color: var(--ink); text-shadow: .05em .04em 0 var(--surf); }
   .stat p { font-family: var(--serif); font-size: 17px; line-height: 1.4; margin-top: 10px; }
